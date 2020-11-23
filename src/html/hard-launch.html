@@ -1,0 +1,31 @@
+{#
+  Nunjucks Templating!
+  Homepage: https://mozilla.github.io/nunjucks/
+  Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+
+{% extends 'layouts/application.html' %}
+
+{% block content %}
+<main id="soft-launch">
+    <div class="section bg bg__red-stars bg__red-stars-sm">
+        <div class="section__container">
+            <img src="images/logo-white.svg" alt="" class="logo">
+            <h1>Get Ready</h1>
+            <h3>soft launch in progress</h3>
+            <p>Barstool Sportsbook will be live in Pennsylvania soon. Received an invitation for soft launch? Click Get
+                Started to begin.</p>
+            <a href="#" class="button button__white">Get Started</a>
+            <p>Have not received a code for soft launch? <a href="">Register your interest here, today!</a></p>
+            <h4>Prefer to place your bets live? Visit one of our casinos near you</h4>
+            <div class="sponsors">
+                <img src="images/the-meadows.svg" alt="" class="sponsor">
+                <img src="images/hollywood-casino.svg" alt="" class="sponsor">
+            </div>
+        </div>
+        <div class="section__footer">
+            {% include 'shared/disclaimer.html' %}
+        </div>
+    </div>
+</main>
+{% endblock %}

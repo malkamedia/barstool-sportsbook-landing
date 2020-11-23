@@ -2,5 +2,8 @@
     display: inline-block;
     &.-chevron-down {
         width: 12px;
+        @include respond-to('medium') {
+            width: 16px;
+        }
     }
 }

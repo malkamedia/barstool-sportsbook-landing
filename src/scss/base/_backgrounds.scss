@@ -1,41 +1,59 @@
 .bg {
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
     &__boxes {
-        background-image: url('../images/bg-boxes.jpg');
-
         &-sm {
             background-image: url('../images/bg-boxes-mobile.jpg');
+        }
+        @include respond-to('medium') {
+            background-image: url('../images/bg-boxes.jpg');
         }
     }
 
     &__playbook {
-        background-image: url('../images/bg-playbook.jpg');
         &-sm {
             background-image: url('../images/bg-playbook-mobile.jpg');
+        }
+        @include respond-to('medium') {
+            background-image: url('../images/bg-playbook.jpg');
         }
     }
 
     &__foamhands {
-        background-image: url('../images/bg-foam-hands.jpg');
         &-sm {
             background-image: url('../images/bg-foam-hands-mobile.jpg');
+        }
+        @include respond-to('medium') {
+            background-image: url('../images/bg-foam-hands.jpg');
         }
     }
 
     &__red-squares {
-        background-image: url('../images/bg-red-squares.jpg');
-
         &-sm {
             background-image: url('../images/bg-red-squares-mobile.jpg');
+        }
+        @include respond-to('medium') {
+            background-image: url('../images/bg-red-squares.jpg');
         }
     }
 
     &__red-stars {
-        background-image: url('../images/bg-red-stars.jpg');
-
         &-sm {
             background-image: url('../images/bg-red-stars-mobile.jpg');
+        }
+        @include respond-to('medium') {
+            background-image: url('../images/bg-red-stars.jpg');
+        }
+    }
+
+    &__white-numbers {
+        &-sm {
+            background-image: url('../images/bg-white-numbers-mobile.jpg');
+        }
+        @include respond-to('medium') {
+            background-image: url('../images/bg-white-numbers.jpg');
         }
     }
 

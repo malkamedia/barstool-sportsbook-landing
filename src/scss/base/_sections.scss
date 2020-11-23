@@ -3,22 +3,52 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
+    // overflow: hidden;
     position: relative;
     width: 100vw;
+    transform: translateZ(1px);
 
-    &#intro .logo {
-        width: 150px;
-        margin-bottom: 24px;
+    &#intro {
+        .logo {
+            width: 150px;
+            margin-bottom: 24px;
+            
+            @include respond-to('medium') {
+                width: 327px;
+            }
+        }
+        .section__container {
+            @include respond-to('medium') {
+                padding: 88px 72px;
+            }
+        }
     }
 
     .logo {
         width: 119px;
         margin-bottom: 22px;
+        
+        @include respond-to('medium') {
+            width: 150px;
+            margin-bottom: 96px;
+        }
+        
     }
 
     &__container {
         flex: 1 0 auto;
+        
         padding: 48px 24px;
+
+        h1, h3, h4, p {
+            @include respond-to('medium') {
+                width: 50%;
+            }
+        }
+
+        @include respond-to('medium') {
+            padding: 48px 72px;
+        }
     }
 
     &__container,
@@ -26,13 +56,28 @@
         position: relative;
     }
 
+    &#parlays .section__footer {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%);
+    }
+    &#quick-pick-6 .section__footer {
+        background: linear-gradient(180deg, rgba(131, 22, 34, 0) 0%, rgba(131, 22, 34, 0.8) 100%);
+    }
+
     &__footer {
         background: linear-gradient(180deg, rgba(16, 32, 52, 0) 0%, rgba(16, 32, 52, 0.8) 100%);
         display: flex;
+        height: 50px;
         flex-direction: column;
         justify-content: flex-end;
         margin-bottom: 35px;
         text-align: center;
-        height: 50px;
+        
+        @include respond-to('medium') {
+            background: none;
+            height: 105px;
+            margin-bottom: 117px;
+            padding: 0 72px;
+            text-align: left;
+        }
     }
 }

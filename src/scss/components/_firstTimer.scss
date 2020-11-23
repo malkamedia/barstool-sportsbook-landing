@@ -1,0 +1,12 @@
+#first-timer {
+    img.first-timer {
+        display: none;
+        @include respond-to('medium') {
+            bottom: -210px;
+            display: block;
+            position: absolute;
+            right: 0;
+            width: 60%;
+        }
+    }
+}

@@ -5,6 +5,10 @@
         position: absolute;
         right: 0;
         width: 75%;
+        @include respond-to('medium') {
+            width: 472px;
+            right: 68px;
+        }
     }
 
     .quick-pick-logo {
@@ -12,6 +16,13 @@
         left: 24px;
         position: absolute;
         width: 43.75vw;
+        @include respond-to('medium') {
+            bottom: inherit;
+            left: 54vw;
+            top: 70%;
+            transform: translateY(-50%);
+            width: 250px;
+        }
     }
 
 

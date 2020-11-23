@@ -8,12 +8,26 @@
         position: absolute;
         width: 100%;
     }
+    .device {
+        display: none;
+        @include respond-to('medium') {
+            bottom: 70px;
+            display: block;
+            position: absolute;
+            // top: 14vh;
+            left: 57vw;
+            width: 20vw;
+        }
+    }
     
     .fingers-up {
         bottom: 0;
         position: absolute;
         right: 0;
         width: 100%;
+        @include respond-to('medium') {
+            width: 50%;
+        }
     }
 
     .logo-light {
@@ -22,13 +36,20 @@
     }
 
     .sponser {
+        @include respond-to('medium') {
+            width: 122px;
+        }
     }
 
     p.sub-1 {
         display: flex;
         align-items: center;
+
         .sprite {
             margin-left: 4px;
+            @include respond-to('medium') {
+                margin-left: 8px;
+            }
         }
     }
 }

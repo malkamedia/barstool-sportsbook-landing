@@ -1,0 +1,35 @@
+{#
+  Nunjucks Templating!
+  Homepage: https://mozilla.github.io/nunjucks/
+  Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+
+{% extends 'layouts/application.html' %}
+
+{% block content %}
+<main id="out-of-state">
+    <div class="section bg bg__bg__white-numbers bg__white-numbers-sm">
+        <div class="section__container">
+            <img src="images/logo-dark.svg" alt="" class="logo">
+            <p>
+                We're launching a new online sportsbook, but <strong>we're not in your state.<br />Yet.</strong>
+            </p>
+            <p>
+                <strong>Earn real cash prizes with our PlayBarstool App.</strong>
+            </p>
+            <img src="images/logo-play-barstool.svg" alt="">
+            <a href="" class="button button__blue">OR CONTINUE TO BARSTOOL SPORTSBOOK</a>
+            <div class="sponsors__wrapper">
+                <p>Prefer to place your bets live? <br /><strong>Visit our casinos near you.</strong></p>
+                <div class="sponsors">
+                    <img src="images/penn-national.svg" alt="" class="sponsor">
+                    <img src="images/hollywood-casino-black.svg" alt="" class="sponsor">
+                </div>
+            </div>
+        </div>
+        <div class="section__footer">
+            {% include 'shared/disclaimer.html' %}
+        </div>
+    </div>
+</main>
+{% endblock %}

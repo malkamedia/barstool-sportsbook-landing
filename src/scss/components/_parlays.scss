@@ -1,21 +1,58 @@
 #parlays {
     color: #831622;
 
+    h1,
+    h3,
+    h4,
+    p, 
+    a {
+        @include respond-to('medium') {
+            position: relative;
+            left: 50%;
+        }
+    }
+
+    h1,
+    h3,
+    h4,
+    p {
+        @include respond-to('medium') {
+            width: 35%;
+        }
+    }
+    
+
     .portnoy {
         bottom: 0;
         position: absolute;
         right: 0;
         width: 100%;
+        @include respond-to('medium') {
+            right: auto;
+            left: 5%;
+            width: 50%;
+        }
     }
     .parlay-logo {
         bottom: 10vh;
         left: 24px;
         position: absolute;
+        @include respond-to('medium') {
+            width: 300px;
+            bottom: auto;
+            left: 34px;
+            top: 65%;
+            transform: translateY(-50%);
+        }
     }
 
     .disclaimer {
         color: #111111;
         text-shadow: 0px 0px 12px #FFFFFF;
+        @include respond-to('medium') {
+            text-align: right;
+            width: 50%;
+        }
     }
 
 }

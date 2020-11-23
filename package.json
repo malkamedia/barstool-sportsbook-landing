@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "yarn run blendid",
+    "build": "yarn run blendid build"
+  },
   "dependencies": {
     "blendid": "^4.5.3",
     "ssr-window": "^3.0.0"

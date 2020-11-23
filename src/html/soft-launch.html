@@ -7,20 +7,24 @@
 {% extends 'layouts/application.html' %}
 
 {% block content %}
-<main>
-    <div class="container">
-        <img src="images/logo-white.svg" alt="" class="logo">
-        <h1>Winners! Winners!</h1>
-        <h3>Now available in Pennsylvania</h3>
-        <p>Get started by claiming your first deposit bonus and then begin wagering by using exclusive features like
-            Quick Pick 6, Parlay Builder & Odds Boosts.</p>
-        <a href="#" class="button button__white">Get Started</a>
-        <h4>Prefer to place your bets live? Visit one of our casinos near you</h4>
-        <div class="sponsors">
-            <img src="images/the-meadows.svg" alt="" class="sponsor">
-            <img src="images/hollywoord-casino.svg" alt="" class="sponsor">
+<main id="soft-launch">
+    <div class="section bg bg__red-stars bg__red-stars-sm">
+        <div class="section__container">
+            <img src="images/logo-white.svg" alt="" class="logo">
+            <h1>Winners! Winners!</h1>
+            <h3>Now available in Pennsylvania</h3>
+            <p>Get started by claiming your first deposit bonus and then begin wagering by using exclusive features like
+                Quick Pick 6, Parlay Builder & Odds Boosts.</p>
+            <a href="#" class="button button__white">Get Started</a>
+            <h4>Prefer to place your bets live? Visit one of our casinos near you</h4>
+            <div class="sponsors">
+                <img src="images/the-meadows.svg" alt="" class="sponsor">
+                <img src="images/hollywood-casino.svg" alt="" class="sponsor">
+            </div>
         </div>
-        {% include 'shared/disclaimer.html' %}
+        <div class="section__footer">
+            {% include 'shared/disclaimer.html' %}
+        </div>
     </div>
 </main>
 {% endblock %}

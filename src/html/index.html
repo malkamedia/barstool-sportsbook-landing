@@ -7,7 +7,7 @@
 {% extends 'layouts/application.html' %}
 
 {% block content %}
-<main data-module='barstool-scene'>
+<main data-module='barstool-scene' data-active-view="">
   <div class="container">
   {% include 'sections/intro.html' %}
   {% include 'sections/first-timer.html' %}
@@ -24,6 +24,12 @@
       </div>
       <div class="custom-pagination">01 / 04</div>
       <a href="#">View All</a>
+    </div>
+    <div class="controls__buttons">
+      <a href="#intro" class="button button__control">This is <strong>barstool sportsbook</strong></a>
+      <a href="#first-timer" class="button button__control">First bet is on us</a>
+      <a href="#parlays" class="button button__control">Custom parlays</a>
+      <a href="#quick-pick-6" class="button button__control">Quick pick 6</a>
     </div>
   </div>
 </main>
