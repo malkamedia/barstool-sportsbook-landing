@@ -1,0 +1,32 @@
+.button {
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 100%;
+    margin-bottom: 16px;
+    padding: 12px 32px;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+        text-decoration: none;
+    }
+    &__white {
+        background-color: white;
+        border: thin solid #1B324D;
+        color: #1B324D;
+        &--alt {
+            background-color: white;
+            border: thin solid #831622;
+            color: #831622;
+            
+        }
+    }
+    
+}
+

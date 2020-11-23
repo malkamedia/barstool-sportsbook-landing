@@ -1,0 +1,43 @@
+.bg {
+    background-size: cover;
+
+    &__boxes {
+        background-image: url('../images/bg-boxes.jpg');
+
+        &-sm {
+            background-image: url('../images/bg-boxes-mobile.jpg');
+        }
+    }
+
+    &__playbook {
+        background-image: url('../images/bg-playbook.jpg');
+        &-sm {
+            background-image: url('../images/bg-playbook-mobile.jpg');
+        }
+    }
+
+    &__foamhands {
+        background-image: url('../images/bg-foam-hands.jpg');
+        &-sm {
+            background-image: url('../images/bg-foam-hands-mobile.jpg');
+        }
+    }
+
+    &__red-squares {
+        background-image: url('../images/bg-red-squares.jpg');
+
+        &-sm {
+            background-image: url('../images/bg-red-squares-mobile.jpg');
+        }
+    }
+
+    &__red-stars {
+        background-image: url('../images/bg-red-stars.jpg');
+
+        &-sm {
+            background-image: url('../images/bg-red-stars-mobile.jpg');
+        }
+    }
+
+    
+}

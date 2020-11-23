@@ -1,0 +1,26 @@
+{#
+  Nunjucks Templating!
+  Homepage: https://mozilla.github.io/nunjucks/
+  Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+
+{% extends 'layouts/application.html' %}
+
+{% block content %}
+<main>
+    <div class="container">
+        <img src="images/logo-white.svg" alt="" class="logo">
+        <h1>Winners! Winners!</h1>
+        <h3>Now available in Pennsylvania</h3>
+        <p>Get started by claiming your first deposit bonus and then begin wagering by using exclusive features like
+            Quick Pick 6, Parlay Builder & Odds Boosts.</p>
+        <a href="#" class="button button__white">Get Started</a>
+        <h4>Prefer to place your bets live? Visit one of our casinos near you</h4>
+        <div class="sponsors">
+            <img src="images/the-meadows.svg" alt="" class="sponsor">
+            <img src="images/hollywoord-casino.svg" alt="" class="sponsor">
+        </div>
+        {% include 'shared/disclaimer.html' %}
+    </div>
+</main>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% from 'macros/helpers.html' import sprite %}
+<section id="intro" class="section bg bg__playbook bg__playbook-sm">
+    <img class="fingers-up" src="images/fingers-up.png" alt="">
+    <div class="section__container">
+        <img class="logo" src="images/logo-light.svg" alt="">
+        <h1>You bet we did</h1>
+        <p>Get exclusive odds, combos & tips from your Barstool favorites in a new kind of online sportsbook. Authentic.
+            Unapologetic. 24/7.</p>
+        <a href="" class="button button__white">Sign up now</a>
+        <p class="sub-1">SCROLL TO CLAIM PROMOTIONS {{ sprite('chevron-down') }}</p>
+        <img class="sponser" src="images/hollywood-casino.svg" alt="">
+    </div>
+    <div class="section__footer">
+        {% include 'shared/disclaimer.html' %}
+    </div>
+</section>

@@ -1,0 +1,30 @@
+{#
+  Nunjucks Templating!
+  Homepage: https://mozilla.github.io/nunjucks/
+  Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+
+{% extends 'layouts/application.html' %}
+
+{% block content %}
+<main data-module='barstool-scene'>
+  <div class="container">
+  {% include 'sections/intro.html' %}
+  {% include 'sections/first-timer.html' %}
+  {% include 'sections/parlays.html' %}
+  {% include 'sections/quick-pick-6.html' %}
+  </div>
+  <div class="controls__wrapper">
+    <div class="controls">
+      <div class="custom-button-prev">
+        {{ sprite('chevron-left') }}
+      </div>
+      <div class="custom-button-next">
+        {{ sprite('chevron-right') }}
+      </div>
+      <div class="custom-pagination">01 / 04</div>
+      <a href="#">View All</a>
+    </div>
+  </div>
+</main>
+{% endblock %}
